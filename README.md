@@ -1,1 +1,2 @@
 # E-Commerce_SQL_Data_Warehouse
+Designed and implemented a star-schema-based E-Commerce Data Warehouse in SQL Server using raw transactional data. Built ETL logic using T-SQL, cleaned and transformed over 500K records. Created dimension and fact tables for customer, product, and sales analysis. Performed advanced analytics including customer segmentation, top product ranking, and sales trend insights.
