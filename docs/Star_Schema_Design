@@ -1,0 +1,39 @@
+# ⭐ Star Schema Design – E-Commerce Data Warehouse
+
+## Fact Table: FactSales
+- SalesKey (PK, INT IDENTITY)
+- InvoiceNo
+- CustomerKey (FK)
+- ProductKey (FK)
+- DateKey (FK)
+- Quantity
+- UnitPrice
+- TotalPrice (Quantity × UnitPrice)
+
+## Dimension Tables
+
+### DimCustomer
+- CustomerKey (PK)
+- CustomerID
+- Country
+
+### DimProduct
+- ProductKey (PK)
+- StockCode
+- Description
+
+### DimDate
+- DateKey (PK, YYYYMMDD)
+- FullDate
+- Year
+- Month
+- Quarter
+- MonthName
+- Day
+- WeekdayName
+
+### DimInvoice
+- InvoiceNo
+- InvoiceDate
+- IsCancelled
+
